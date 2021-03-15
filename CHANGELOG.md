@@ -1,5 +1,9 @@
 # Changelog
 
+
+## Version [7.0.0](https://github.com/cedx/lcov.dart/compare/v5.7.0...v6.0.0)
+- Migrate to null safety
+
 ## Version [6.0.0](https://github.com/cedx/lcov.dart/compare/v5.7.0...v6.0.0)
 - Breaking change: removed the `.fromJson()` factories.
 - Raised the [Dart SDK](https://dart.dev/tools/sdk) constraint.

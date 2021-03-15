@@ -1,11 +1,11 @@
-part of "../lcov.dart";
+part of "../lcov_dart.dart";
 
 /// Provides the coverage data of branches.
 @JsonSerializable(createFactory: false, explicitToJson: true)
 class BranchCoverage {
 
   /// Creates a new branch coverage.
-  BranchCoverage([this.found = 0, this.hit = 0, Iterable<BranchData> data]):
+  BranchCoverage([this.found = 0, this.hit = 0, Iterable<BranchData>? data]):
     data = data?.toList() ?? <BranchData>[];
 
   /// The coverage data.

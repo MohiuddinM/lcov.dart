@@ -1,4 +1,4 @@
-part of "../lcov.dart";
+part of "../lcov_dart.dart";
 
 /// An exception caused by a parsing error.
 class LcovException extends FormatException {

@@ -1,4 +1,4 @@
-part of "../lcov.dart";
+part of "../lcov_dart.dart";
 
 /// Provides the coverage data of a source file.
 @JsonSerializable(createFactory: false, explicitToJson: true)
@@ -8,13 +8,13 @@ class Record {
 	Record(this.sourceFile, {this.branches, this.functions, this.lines});
 
 	/// The branch coverage.
-	BranchCoverage branches;
+	BranchCoverage? branches;
 
 	/// The function coverage.
-	FunctionCoverage functions;
+	FunctionCoverage? functions;
 
 	/// The line coverage.
-	LineCoverage lines;
+	LineCoverage? lines;
 
 	/// The path to the source file.
 	@JsonKey(defaultValue: "")

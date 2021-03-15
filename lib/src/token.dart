@@ -1,4 +1,4 @@
-part of "../lcov.dart";
+part of "../lcov_dart.dart";
 
 /// Provides the list of tokens supported by the parser.
 abstract class Token {

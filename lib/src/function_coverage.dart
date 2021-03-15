@@ -1,11 +1,11 @@
-part of "../lcov.dart";
+part of "../lcov_dart.dart";
 
 /// Provides the coverage data of functions.
 @JsonSerializable(createFactory: false, explicitToJson: true)
 class FunctionCoverage {
 
   /// Creates a new function coverage.
-  FunctionCoverage([this.found = 0, this.hit = 0, Iterable<FunctionData> data]):
+  FunctionCoverage([this.found = 0, this.hit = 0, Iterable<FunctionData>? data]):
     data = data?.toList() ?? <FunctionData>[];
 
   /// The coverage data.

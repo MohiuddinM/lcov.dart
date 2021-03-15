@@ -1,7 +1,7 @@
 // ignore_for_file: avoid_print
 import "dart:convert";
 import "dart:io";
-import "package:lcov/lcov.dart";
+import "package:lcov_dart/lcov_dart.dart";
 
 /// Formats coverage data as LCOV report.
 void formatReport() {
@@ -10,7 +10,7 @@ void formatReport() {
 		LineData(7, executionCount: 2, checksum: "yGMB6FhEEAd8OyASe3Ni1w")
 	]);
 
-	final record = Record("/home/cedx/lcov.dart/fixture.dart")
+	final record = Record("/home/cedx/lcov_dart.dart/fixture.dart")
 		..functions = FunctionCoverage(1, 1)
 		..lines = lineCoverage;
 

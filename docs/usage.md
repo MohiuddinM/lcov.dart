@@ -8,7 +8,7 @@ The `Report.fromCoverage()` factory parses a [LCOV](http://ltp.sourceforge.net/c
 ```dart
 import "dart:convert";
 import "dart:io";
-import "package:lcov/lcov.dart";
+import "package:lcov_dart/lcov_dart.dart";
 
 Future<void> main() async {
 	try {
@@ -35,7 +35,7 @@ Converting the `Report` instance to [JSON](https://www.json.org) format will ret
 	"testName": "Example",
 	"records": [
 		{
-			"sourceFile": "/home/cedx/lcov.dart/fixture.dart",
+			"sourceFile": "/home/cedx/lcov_dart.dart/fixture.dart",
 			"branches": {
 				"found": 0,
 				"hit": 0,
@@ -68,7 +68,7 @@ Each provided class has a dedicated `toString()` instance method returning the c
 All you have to do is to create the adequate structure using these different classes, and to export the final result:
 
 ```dart
-import "package:lcov/lcov.dart";
+import "package:lcov_dart/lcov_dart.dart";
 
 void main() {
 	final lineCoverage = LineCoverage(2, 2, [
@@ -76,7 +76,7 @@ void main() {
 		LineData(7, executionCount: 2, checksum: "yGMB6FhEEAd8OyASe3Ni1w")
 	]);
 
-	final record = Record("/home/cedx/lcov.dart/fixture.dart")
+	final record = Record("/home/cedx/lcov_dart.dart/fixture.dart")
 		..functions = FunctionCoverage(1, 1)
 		..lines = lineCoverage;
 

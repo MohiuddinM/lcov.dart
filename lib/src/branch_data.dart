@@ -1,4 +1,4 @@
-part of "../lcov.dart";
+part of "../lcov_dart.dart";
 
 /// Provides details for branch coverage.
 @JsonSerializable(createFactory: false)

@@ -1,4 +1,4 @@
-import "package:lcov/lcov.dart";
+import "package:lcov_dart/lcov_dart.dart";
 import "package:test/test.dart";
 
 /// Tests the features of the [FunctionCoverage] class.

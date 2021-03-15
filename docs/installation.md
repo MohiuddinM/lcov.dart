@@ -32,5 +32,5 @@ dart pub get
 Now in your [Dart](https://dart.dev) code, you can use:
 
 ```dart
-import "package:lcov/lcov.dart";
+import "package:lcov_dart/lcov_dart.dart";
 ```
